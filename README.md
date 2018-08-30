@@ -1,4 +1,4 @@
-# date-in-between-calculator
+# Days In between calculator
 Calculate the days in between two given dates
 
 ## Usage
