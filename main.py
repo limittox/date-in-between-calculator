@@ -2,8 +2,10 @@ import sys
 from modules import dateDiff
 from modules.date import date
 
+if len(sys.argv) < 3:
+	print("Usage: main.py DD/MM/YYYY DD/MM/YYYY OR --file <file_name>")
 
-if sys.argv[1] == "--file":
+elif sys.argv[1] == "--file":
 	with open(sys.argv[2]) as f:
 		dates = f.read().splitlines()
 	dates = [x.split() for x in dates]
